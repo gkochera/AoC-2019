@@ -18,7 +18,8 @@ var fr = FileReader()
 
 // Day 2
 var data2 = fr.readFileToIntArray(fileName: "day2.txt", separator: ",")
-var day2 = Day2(debug: true, input: data2 )
-day2.solve()
+var day2 = Day2(debug: false, input: data2 )
+print("PART A ANSWER ---")
+print(" Answer: \(day2.solve())")
 
-
+//day2.findNounAndVerb(target: 19690720)
