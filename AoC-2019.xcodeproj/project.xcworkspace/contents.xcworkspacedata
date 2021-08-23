@@ -5,6 +5,10 @@
       location = "group:/Users/gkochera/SynologyDrive/Coding/Swift/AoC-2019/Day1.swift">
    </FileRef>
    <FileRef
+      location = "absolute:/Users/gkochera/SynologyDrive/Coding/Swift/AoC-2019/Day1.swift"
+      assignedFileDataType = "public.swift-source">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

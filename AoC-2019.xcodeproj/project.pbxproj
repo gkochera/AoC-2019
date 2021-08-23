@@ -10,7 +10,7 @@
 		42461D8926D33804009A3F26 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42461D8826D33804009A3F26 /* Day2.swift */; };
 		42461D8F26D3398B009A3F26 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42461D8E26D3398B009A3F26 /* Day1.swift */; };
 		42E54A2026D30F0E00DE296F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54A1F26D30F0E00DE296F /* main.swift */; };
-		42E54A3326D31A8500DE296F /* data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A2C26D3156300DE296F /* data.txt */; };
+		42E54A3326D31A8500DE296F /* day1.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A2C26D3156300DE296F /* day1.txt */; };
 		42E54A3B26D3250800DE296F /* test.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A3A26D324AF00DE296F /* test.txt */; };
 		42E54A3E26D325A700DE296F /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54A3D26D325A700DE296F /* FileReader.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +23,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				42E54A3B26D3250800DE296F /* test.txt in CopyFiles */,
-				42E54A3326D31A8500DE296F /* data.txt in CopyFiles */,
+				42E54A3326D31A8500DE296F /* day1.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,10 +31,11 @@
 
 /* Begin PBXFileReference section */
 		42461D8826D33804009A3F26 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
-		42461D8E26D3398B009A3F26 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day1.swift; path = "/Users/gkochera/SynologyDrive/Coding/Swift/AoC-2019/Day1.swift"; sourceTree = "<absolute>"; };
+		42461D8E26D3398B009A3F26 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day1.swift; path = "/Users/gkochera/SynologyDrive/Coding/Swift/AoC-2019/Days/Day1.swift"; sourceTree = "<absolute>"; };
+		42461DAB26D34707009A3F26 /* day2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2.txt; sourceTree = "<group>"; };
 		42E54A1C26D30F0E00DE296F /* AoC-2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AoC-2019"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E54A1F26D30F0E00DE296F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		42E54A2C26D3156300DE296F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		42E54A2C26D3156300DE296F /* day1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day1.txt; sourceTree = "<group>"; };
 		42E54A3A26D324AF00DE296F /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		42E54A3D26D325A700DE296F /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,14 +68,23 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		42461DA926D34670009A3F26 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				42E54A2C26D3156300DE296F /* day1.txt */,
+				42E54A3A26D324AF00DE296F /* test.txt */,
+				42461DAB26D34707009A3F26 /* day2.txt */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		42E54A1326D30F0E00DE296F = {
 			isa = PBXGroup;
 			children = (
-				42E54A2C26D3156300DE296F /* data.txt */,
+				42461DA926D34670009A3F26 /* Data */,
 				42461D9226D339C7009A3F26 /* Utilities */,
 				42461D9126D339A2009A3F26 /* Days */,
 				42E54A1F26D30F0E00DE296F /* main.swift */,
-				42E54A3A26D324AF00DE296F /* test.txt */,
 				42E54A1D26D30F0E00DE296F /* Products */,
 			);
 			sourceTree = "<group>";
