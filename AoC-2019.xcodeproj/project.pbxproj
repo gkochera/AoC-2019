@@ -51,7 +51,11 @@
 		42E54A1326D30F0E00DE296F = {
 			isa = PBXGroup;
 			children = (
-				42E54A1E26D30F0E00DE296F /* AoC-2019 */,
+				42E54A3D26D325A700DE296F /* FileReader.swift */,
+				42E54A2C26D3156300DE296F /* data.txt */,
+				42E54A1F26D30F0E00DE296F /* main.swift */,
+				42461D7C26D32962009A3F26 /* Day1.swift */,
+				42E54A3A26D324AF00DE296F /* test.txt */,
 				42E54A1D26D30F0E00DE296F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,18 +66,6 @@
 				42E54A1C26D30F0E00DE296F /* AoC-2019 */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		42E54A1E26D30F0E00DE296F /* AoC-2019 */ = {
-			isa = PBXGroup;
-			children = (
-				42E54A3D26D325A700DE296F /* FileReader.swift */,
-				42E54A2C26D3156300DE296F /* data.txt */,
-				42E54A1F26D30F0E00DE296F /* main.swift */,
-				42461D7C26D32962009A3F26 /* Day1.swift */,
-				42E54A3A26D324AF00DE296F /* test.txt */,
-			);
-			path = "AoC-2019";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +261,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "learnswift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -286,7 +278,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "learnswift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
