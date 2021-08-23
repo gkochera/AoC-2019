@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42461D7D26D32962009A3F26 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42461D7C26D32962009A3F26 /* Day1.swift */; };
+		42461D8926D33804009A3F26 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42461D8826D33804009A3F26 /* Day2.swift */; };
 		42E54A2026D30F0E00DE296F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54A1F26D30F0E00DE296F /* main.swift */; };
 		42E54A3326D31A8500DE296F /* data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A2C26D3156300DE296F /* data.txt */; };
 		42E54A3B26D3250800DE296F /* test.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A3A26D324AF00DE296F /* test.txt */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		42461D7C26D32962009A3F26 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		42461D8826D33804009A3F26 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		42E54A1C26D30F0E00DE296F /* AoC-2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AoC-2019"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E54A1F26D30F0E00DE296F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		42E54A2C26D3156300DE296F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -48,13 +50,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42E54A1326D30F0E00DE296F = {
+		42461D8526D337D6009A3F26 /* Days */ = {
+			isa = PBXGroup;
+			children = (
+				42461D7C26D32962009A3F26 /* Day1.swift */,
+				42461D8826D33804009A3F26 /* Day2.swift */,
+			);
+			name = Days;
+			sourceTree = "<group>";
+		};
+		42461D8626D337E4009A3F26 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				42E54A3D26D325A700DE296F /* FileReader.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		42E54A1326D30F0E00DE296F = {
+			isa = PBXGroup;
+			children = (
+				42461D8626D337E4009A3F26 /* Utilities */,
 				42E54A2C26D3156300DE296F /* data.txt */,
 				42E54A1F26D30F0E00DE296F /* main.swift */,
-				42461D7C26D32962009A3F26 /* Day1.swift */,
+				42461D8526D337D6009A3F26 /* Days */,
 				42E54A3A26D324AF00DE296F /* test.txt */,
 				42E54A1D26D30F0E00DE296F /* Products */,
 			);
@@ -127,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E54A2026D30F0E00DE296F /* main.swift in Sources */,
+				42461D8926D33804009A3F26 /* Day2.swift in Sources */,
 				42461D7D26D32962009A3F26 /* Day1.swift in Sources */,
 				42E54A3E26D325A700DE296F /* FileReader.swift in Sources */,
 			);
