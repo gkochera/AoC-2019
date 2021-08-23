@@ -10,7 +10,7 @@ import Foundation
 
 // Create a file reader and read the data from the file into a usable format
 var fr = FileReader()
-var data = fr.readFile(fileName: "day1.txt");
+var data = fr.readFileToFloatArray(fileName: "day1.txt", separator: "\n");
 
 
 // Create the day object and solve the problem

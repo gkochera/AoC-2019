@@ -11,50 +11,40 @@ import Foundation
 
 class FileReader {
     
-    static func readFileToFloatArray(fileName: String, separator: String.Element) -> [Float] {
-        
+    func readFileToFloatArray(fileName: String, separator: String.Element) -> [Float] {
+        let subSequence = _readFileToArray(fileName: fileName, separator: separator)
+        var data: [Float] = [Float]()
+        // Construct the array
+        for line in subSequence {
+            if let temp = Float(line) {
+                data.append(temp)
+            } else {
+                print("Invalid data")
+            }
+        }
+        return data
     }
     
-    static func readFileToIntArray(fileName: String, separator: String.Element) -> [Int] {
-        
+    func readFileToIntArray(fileName: String, separator: String.Element) -> [Int] {
+        let subSequence = _readFileToArray(fileName: fileName, separator: separator)
+        var data: [Int] = [Int]()
+        // Construct the array
+        for line in subSequence {
+            if let temp = Int(line) {
+                data.append(temp)
+            } else {
+                print("Invalid data")
+            }
+        }
+        return data
     }
     
-    private func _readFileToArray<T>(type: T.Type, fileName: String, separator: String.Element) {
+    private func _readFileToArray(fileName: String, separator: String.Element) -> [String.SubSequence] {
         // Open the file, split at every newline and put each element in an array
         let contents = try! String(contentsOfFile: fileName)
         let lines = contents.split(separator: separator)
-
+        return lines
         
-        // Setup the array we're going to return
-        if type is Float {
-            var data = [Float]()
-            
-            // Construct the array
-            for line in lines {
-                if let temp = Float(line) {
-                    data.append(temp)
-                } else {
-                    print("Invalid data")
-                }
-            }
-            
-        } else if type is Int {
-            var data = [Int]()
-            
-            // Construct the array
-            for line in lines {
-                if let temp = Int(line) {
-                    data.append(temp)
-                } else {
-                    print("Invalid data")
-                }
-            }
-        }
-        
-
-        
-        // Return the array
-        return data
     }
 
 }
