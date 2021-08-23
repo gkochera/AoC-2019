@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/gkochera/SynologyDrive/Coding/Swift/learnswift/AoC-2019.xcodeproj">
+      location = "group:/Users/gkochera/SynologyDrive/Coding/Swift/AoC-2019/Day1.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
