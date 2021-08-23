@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42461D7D26D32962009A3F26 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42461D7C26D32962009A3F26 /* Day1.swift */; };
 		42E54A2026D30F0E00DE296F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54A1F26D30F0E00DE296F /* main.swift */; };
+		42E54A3326D31A8500DE296F /* data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A2C26D3156300DE296F /* data.txt */; };
+		42E54A3B26D3250800DE296F /* test.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42E54A3A26D324AF00DE296F /* test.txt */; };
+		42E54A3E26D325A700DE296F /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54A3D26D325A700DE296F /* FileReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		42E54A1A26D30F0E00DE296F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				42E54A3B26D3250800DE296F /* test.txt in CopyFiles */,
+				42E54A3326D31A8500DE296F /* data.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		42E54A1C26D30F0E00DE296F /* learnswift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = learnswift; sourceTree = BUILT_PRODUCTS_DIR; };
+		42461D7C26D32962009A3F26 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		42E54A1C26D30F0E00DE296F /* AoC-2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AoC-2019"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E54A1F26D30F0E00DE296F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		42E54A2C26D3156300DE296F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		42E54A3A26D324AF00DE296F /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		42E54A3D26D325A700DE296F /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +51,7 @@
 		42E54A1326D30F0E00DE296F = {
 			isa = PBXGroup;
 			children = (
-				42E54A1E26D30F0E00DE296F /* learnswift */,
+				42E54A1E26D30F0E00DE296F /* AoC-2019 */,
 				42E54A1D26D30F0E00DE296F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +59,29 @@
 		42E54A1D26D30F0E00DE296F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42E54A1C26D30F0E00DE296F /* learnswift */,
+				42E54A1C26D30F0E00DE296F /* AoC-2019 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42E54A1E26D30F0E00DE296F /* learnswift */ = {
+		42E54A1E26D30F0E00DE296F /* AoC-2019 */ = {
 			isa = PBXGroup;
 			children = (
+				42E54A3D26D325A700DE296F /* FileReader.swift */,
+				42E54A2C26D3156300DE296F /* data.txt */,
 				42E54A1F26D30F0E00DE296F /* main.swift */,
+				42461D7C26D32962009A3F26 /* Day1.swift */,
+				42E54A3A26D324AF00DE296F /* test.txt */,
 			);
-			path = learnswift;
+			path = "AoC-2019";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42E54A1B26D30F0E00DE296F /* learnswift */ = {
+		42E54A1B26D30F0E00DE296F /* AoC-2019 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42E54A2326D30F0E00DE296F /* Build configuration list for PBXNativeTarget "learnswift" */;
+			buildConfigurationList = 42E54A2326D30F0E00DE296F /* Build configuration list for PBXNativeTarget "AoC-2019" */;
 			buildPhases = (
 				42E54A1826D30F0E00DE296F /* Sources */,
 				42E54A1926D30F0E00DE296F /* Frameworks */,
@@ -77,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = learnswift;
+			name = "AoC-2019";
 			productName = learnswift;
-			productReference = 42E54A1C26D30F0E00DE296F /* learnswift */;
+			productReference = 42E54A1C26D30F0E00DE296F /* AoC-2019 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -93,10 +107,11 @@
 				TargetAttributes = {
 					42E54A1B26D30F0E00DE296F = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
-			buildConfigurationList = 42E54A1726D30F0E00DE296F /* Build configuration list for PBXProject "learnswift" */;
+			buildConfigurationList = 42E54A1726D30F0E00DE296F /* Build configuration list for PBXProject "AoC-2019" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42E54A1B26D30F0E00DE296F /* learnswift */,
+				42E54A1B26D30F0E00DE296F /* AoC-2019 */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E54A2026D30F0E00DE296F /* main.swift in Sources */,
+				42461D7D26D32962009A3F26 /* Day1.swift in Sources */,
+				42E54A3E26D325A700DE296F /* FileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +261,16 @@
 		42E54A2426D30F0E00DE296F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "learnswift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -253,8 +278,15 @@
 		42E54A2526D30F0E00DE296F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "learnswift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -262,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42E54A1726D30F0E00DE296F /* Build configuration list for PBXProject "learnswift" */ = {
+		42E54A1726D30F0E00DE296F /* Build configuration list for PBXProject "AoC-2019" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42E54A2126D30F0E00DE296F /* Debug */,
@@ -271,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42E54A2326D30F0E00DE296F /* Build configuration list for PBXNativeTarget "learnswift" */ = {
+		42E54A2326D30F0E00DE296F /* Build configuration list for PBXNativeTarget "AoC-2019" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42E54A2426D30F0E00DE296F /* Debug */,
