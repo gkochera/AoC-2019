@@ -29,8 +29,8 @@ class FileReader {
         let subSequence = _readFileToArray(fileName: fileName, separator: separator)
         var data: [Int] = [Int]()
         // Construct the array
-        for line in subSequence {
-            if let temp = Int(line) {
+        for item in subSequence {
+            if let temp = Int(item.trimmingCharacters(in: .whitespacesAndNewlines)) {
                 data.append(temp)
             } else {
                 print("Invalid data")

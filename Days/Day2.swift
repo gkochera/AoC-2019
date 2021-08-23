@@ -11,28 +11,30 @@ class Day2 {
     
     // Have an flag on construction for debugging statements
     let debug: Bool
-    var instructions: [Int]
+    var input: [Int]
+    var oldInput: [Int]
     
-    init(debug: Bool, instructions: [Int]) {
+    init(debug: Bool, input: [Int]) {
         self.debug = debug
-        self.instructions = instructions
+        self.input = input
+        self.oldInput = input
+        self.input[1] = 12
+        self.input[2] = 2
     }
     
     func solve() -> Void {
-        
         // Set a variable for the index
         var index = 0
         
         // Loop through the array until we hit 99 which is the stop opcode
-        while (self.instructions[index] != 99) {
+        while (self.input[index] != 99) {
             
-            if (self.instructions[index] == 1) {
-                
-                self.add(idFirst: index + 1, idSecond: index + 2, idThird: index + 3)
+            if (self.input[index] == 1) {
+                self.add(index: index)
             
-            } else if (self.instructions[index] == 2) {
+            } else if (self.input[index] == 2) {
                 
-                self.mult(idFirst: index + 1, idSecond: index + 2, idThird: index + 3)
+                self.mult(index: index)
             
             } else {
                 
@@ -43,14 +45,23 @@ class Day2 {
             
             index += 4
         }
+        
+        print("PART A ANSWER ---")
+        print(self.oldInput, "\nvvv\n", self.input)
     }
     
-    func add(idFirst: Int, idSecond: Int, idThird: Int) {
-        self.instructions[idThird] = self.instructions[idFirst] + self.instructions[idSecond]
+    func add(index: Int) {
+        let idFirst = self.input[index + 1]
+        let idSecond = self.input[index + 2]
+        let idThird = self.input[index + 3]
+        self.input[idThird] = self.input[idFirst] + self.input[idSecond]
     }
     
-    func mult(idFirst: Int, idSecond: Int, idThird: Int) {
-        self.instructions[idThird] = self.instructions[idFirst] * self.instructions[idSecond]
+    func mult(index: Int) {
+        let idFirst = self.input[index + 1]
+        let idSecond = self.input[index + 2]
+        let idThird = self.input[index + 3]
+        self.input[idThird] = self.input[idFirst] * self.input[idSecond]
      }
     
 }

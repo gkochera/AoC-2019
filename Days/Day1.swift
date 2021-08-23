@@ -11,21 +11,23 @@ class Day1 {
     
     // Have an flag on construction for debugging statements
     let debug: Bool
-    init(debug: Bool) {
+    var input: [Float]
+    init(debug: Bool, input: [Float]) {
         self.debug = debug
+        self.input = input
     }
     
-    func solve(input: [Float]) -> Void {
+    func solve() -> Void {
 
         // Perform the calcualtion for fuel
-        for i in data.indices {
-            data[i] = calculateFuel(mass: data[i])
+        for i in self.input.indices {
+            self.input[i] = calculateFuel(mass: self.input[i])
         }
 
         // Sum everything up to an integer
         var sum: Int = 0
 
-        for final in data {
+        for final in self.input {
             sum += Int(final)
         }
         
@@ -35,17 +37,17 @@ class Day1 {
         
         // Display the array if debugging
         if (self.debug) {
-            print(data)
+            print(self.input)
         }
     
         // Perform the calcuation for extra fuel
-        for i in data.indices {
-            data[i] = calculateExtraFuel(mass: data[i])
+        for i in self.input.indices {
+            self.input[i] = calculateExtraFuel(mass: self.input[i])
         }
         
         // Sum everything up to an integer
         sum = 0
-        for final in data {
+        for final in self.input {
             sum += Int(final)
         }
         
@@ -55,7 +57,7 @@ class Day1 {
         
         // Display the array if debugging
         if (self.debug) {
-            print(data)
+            print(self.input)
         }
         
         return

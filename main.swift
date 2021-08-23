@@ -10,15 +10,15 @@ import Foundation
 
 // Create a file reader and read the data from the file into a usable format
 var fr = FileReader()
-var data = fr.readFileToFloatArray(fileName: "day1.txt", separator: "\n");
 
+// Day 1
+//var data1 = fr.readFileToFloatArray(fileName: "day1.txt", separator: "\n");
+//var day1 = Day1(debug: false, input: data1 )
+//day1.solve()
 
-// Create the day object and solve the problem
-
-var day = Day1(debug: false)
-//var day = Day2(debug: true, instructions: )
-
-
-day.solve(input: data)
+// Day 2
+var data2 = fr.readFileToIntArray(fileName: "day2.txt", separator: ",")
+var day2 = Day2(debug: true, input: data2 )
+day2.solve()
 
 
